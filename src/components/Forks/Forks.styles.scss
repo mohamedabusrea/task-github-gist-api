@@ -1,0 +1,20 @@
+.Forks {
+  margin-top: var(--default-padding);
+
+  &__content{
+    display: flex;
+    gap: var(--default-padding);
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    margin-top: calc(var(--default-padding) / 2);
+  }
+
+  &__img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+}

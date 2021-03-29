@@ -1,0 +1,46 @@
+:root{
+--default-padding: 15px;
+--default-radius: 6px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin: var(--default-padding);
+  }
+}
+
+.SearchForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 90vw;
+  margin: 10px;
+  border: 1px solid rgba(55, 55, 55, .5);
+  padding: var(--default-padding);
+  border-radius: var(--default-radius);
+
+  &__input {
+    display: flex;
+    gap: var(--default-padding);
+  }
+}
+
+.SearchResult {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--default-padding);
+  padding-top: calc(var(--default-padding) * 1.5);
+  flex-wrap: wrap;
+}
